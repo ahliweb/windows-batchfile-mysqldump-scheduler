@@ -1,2 +1,2 @@
-# batchfile-windows-mysqldump-scheduler
-batchfile-windows-mysqldump-scheduler
+# windows-batchfile-mysqldump-scheduler
+windows-batchfile-mysqldump-scheduler
