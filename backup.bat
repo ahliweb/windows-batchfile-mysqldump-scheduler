@@ -25,3 +25,26 @@ set timestamp=date_time
 set backupDir=D:\BackupIbra\ibra
 :: please change this directory of your mysqldump.exe, user, password, and database bellow :
 "d:\xampp\mysql\bin\mysqldump.exe" -u"youruser" -p"yourmysqluserpassword" yourdatabase > %backupDir%%datetimef%.sql
+
+:: if you use google drive or other online backup please refer to these bellow :
+:: - create 3 folder on your backup drive : example: d:\backup ;  d:\backupLama ; d:\backupScript ; 
+::   place your script in d:\backupScript and put this script backup.bat here, then call this script backup.bat from your windows 10 scheduler
+:: - don't forget 
+
+:: auto move script start bellow
+:: X is how long your files will be kept on Google drive 
+set X=3
+set "source=D:\Backup"
+set "destination=D:\BackupLama"
+
+robocopy "%source%" "%destination%" /mov /minage:%X%
+
+:: auto move script to drive c: start bellow :
+:: Y is how long your files will be kept from drive D
+set Y=365
+set "csource=D:\BackupLama"
+set "cdestination=C:\Temp"
+
+robocopy "%csource%" "%cdestination%" /mov /minage:%Y%
+
+exit /b
