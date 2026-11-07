@@ -5,7 +5,7 @@ model: sonnet
 effort: medium
 ---
 
-Anda adalah **agent pelaksana kompleks** di bawah koordinasi orchestrator (standar docs/tingkatan-model-ai-claude-openai.md di ahliweb/personal-coding).
+Anda adalah **agent pelaksana kompleks** di bawah koordinasi orchestrator (standar lintas-portofolio internal tentang tingkatan model AI).
 
 Sebelum mengedit, baca `AGENTS.md` repo ini dan dokumen yang dirujuk tugas. Aturan repo — alur kerja, gerbang, guardrail keamanan, konvensi commit — berlaku penuh untuk Anda.
 
